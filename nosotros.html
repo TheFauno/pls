@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Inicio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/materialize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div id="nav"></div>
+
+    <main>
+        <section>
+            <div class="parallax-container"><div class="parallax"><img src="images/fotos/psl_vintage1.jpg"></div></div>
+        </section>
+        <section>
+            <div class="container separar">
+                <div class="row">
+                    <article>
+                        <div class="col s12 m4 l4">
+                            <h5 class="left-align brown-text text-darken-3">Sobre de pullman san luis</h5>
+                            <div class="divider"></div>
+                            <p class="brown-text text-darken-2 justifyText flow-text">PULLMAN SAN LUIS se compromete a proporcionar a nuestros clientes un servicio de calidad acorde
+                                a sus expectativas, en el transporte de personal, diferenciándose de la competencia por su
+                                puntualidad y correcto funcionamiento de los vehículos. Además nos mantendremos en constante
+                                comunicación con nuestros clientes para así ir detectando sus necesidades y por dar una respuesta
+                                efectiva y eficiente este contexto existe un compromiso con la mejora continua de los procesos
+                                buscando de construir relaciones reciprocas de largo plazo.</p>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="col s12 m4 l4 offset-m4 offset-l4">
+                            <h5 class="left-align brown-text text-darken-3">Nuestro objetivo</h5>
+                            <div class="divider"></div>
+                            <p class="brown-text text-darken-2 justifyText flow-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nisi metus, tristique ut aliquet
+                                id, egestas sed metus. Ut vel pellentesque sem. Donec sit amet justo id augue cursus imperdiet
+                                volutpat eget lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                                cubilia Curae; Nulla facilisi. Etiam fringilla venenatis mauris, quis ultrices eros euismod
+                                ut. Fusce mi tellus, placerat eu ex tempor, aliquet maximus augue. Aliquam dignissim in erat
+                                at accumsan. Nulla ut velit eget est tempor dapibus et et turpis. Maecenas rutrum egestas
+                                tristique. Duis dictum posuere lacinia. Nulla eu eros ac massa gravida eleifend. Curabitur
+                                aliquet lacinia lorem sit amet semper. Nullam vestibulum justo id arcu viverra, id aliquam
+                                felis convallis. Duis sit amet hendrerit lorem, et placerat sem. Maecenas feugiat justo et
+                                tortor accumsan, sed faucibus lacus pharetra.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <article>
+                    <div class="col s12 m6 l6">
+                        <h5 class="left-align brown-text text-darken-3">Nuestros clientes</h5>
+                        <div class="divider"></div>
+                        <div class="carousel">
+                            <a class="carousel-item" href="#one!"><img src="images/sanluis.png"></a>
+                            <a class="carousel-item" href="#two!"><img src="images/sanluis.png"></a>
+                            <a class="carousel-item" href="#three!"><img src="images/sanluis.png"></a>
+                            <a class="carousel-item" href="#four!"><img src="images/sanluis.png"></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        </div>
+    </main>
+
+    <div id="footer"></div>
+</body>
+
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/materialize.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('#nav').load('nav.html');
+        $('#footer').load('footer.html');
+        $('.parallax').parallax();   
+        $(".button-collapse").sideNav();             
+        Materialize.updateTextFields();
+        $('.carousel').carousel({
+            padding: 200 
+        });
+        autoplay()
+        });
+        function autoplay() {
+            $('.carousel').carousel('next');
+            setTimeout(autoplay, 1500);
+            }                      
+</script>
+
+</html>
