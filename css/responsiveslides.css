@@ -40,7 +40,7 @@
   from {background-color:#FF5722;}
   to {background-color:#9E9E9E;opacity: 0.5;display: block;}
 }
-  .col-prim-osc{background-color:#E64A19;}.col-prim{background-color:#FF5722;}.col-texto-prim{color:#212121;}.col-texto-sec{color:#757575;}
-  .col-icon{color:#FFFFFF;}a:hover{animation-name:anavbar;animation-duration:1s;}footer ul{list-style:none;}
-
-
+.col-prim-osc{background-color:#E64A19;}.col-prim{background-color:#FF5722;}.col-texto-prim{color:#212121;}.col-texto-sec{color:#757575;}
+.col-icon{color:#FFFFFF;}header a:hover{animation-name:anavbar;animation-duration:1s;}footer ul{list-style:none;}
+.rslides_here{background-color:black; border-radius: 75px; width: 150; height: 150;}
+.rslides_tabs{text-align:center;}.rslides_tabs li{display:inline;margin-right: 5px;}
