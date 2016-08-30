@@ -6,11 +6,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/flexboxgrid.min.css" rel="stylesheet">
+    <link href="css/responsiveslides.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
-    <header style="background-color:black;">
+    <header class="col-prim">
         <div class="row start-xs">
             <div class="col-xs-6">
                 <div class="box">
@@ -19,22 +20,26 @@
             </div>
             <div class="col-xs-6">
                 <div class="row end-xs">
-                    <a href="index.html" style="display: inline-block;" class="col-xs-2"><i class="material-icons left">home</i>Inicio</a>
-                    <a href="servicios.html" class="col-xs-2"><i class="material-icons left">work</i>Servicios</a>
-                    <a href="flota.html" class="col-xs-2"><i class="material-icons left">directions_bus</i>Flota</a>
-                    <a href="nosotros.html" class="col-xs-2"><i class="material-icons left">group</i>La empresa</a>
-                    <a href="contacto.html" class="col-xs-2"><i class="material-icons left">mail</i>Contacto</a>
+                    <a href="index.html" class="col-xs-2 col-icon"><i class="material-icons left">home</i>Inicio</a>
+                    <a href="servicios.html" class="col-xs-2 col-icon"><i class="material-icons left">work</i>Servicios</a>
+                    <a href="flota.html" class="col-xs-2 col-icon"><i class="material-icons left">directions_bus</i>Flota</a>
+                    <a href="nosotros.html" class="col-xs-2 col-icon"><i class="material-icons left">group</i>La empresa</a>
+                    <a href="contacto.html" class="col-xs-2 col-icon"><i class="material-icons left">mail</i>Contacto</a>
                 </div>
             </div>
         </div>
     </header>
 
     <main>
-        <!--Contenido-->
+        <ul class="rslides">
+            <li><img src="images/sanluis.png" alt=""></li>
+            <li><img src="images/logo.png" alt=""></li>
+            <li><img src="images/sanluis.png" alt=""></li>
+        </ul>
     </main>
 
-    <footer style="background-color:green;">
-        <div class="row start-xs">
+    <footer class="col-icon">
+        <div class="row start-xs col-prim">
             <div class="col-xs-6">
                 <div class="box">
                     <h3>Contactanos</h3>
@@ -66,10 +71,19 @@
                 </div>
             </div>
         </div>
-
     </footer>
 
     <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/responsiveslides.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $(".rslides").responsiveSlides({
+            auto:true,
+            speed:500,
+            timeout:4000
+        });
+    });
+</script>
 </body>
 
 </html>
