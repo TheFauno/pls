@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
 }
+.row-vert-align{width:100% ;margin: 0;}
+.no-paddin{padding: 0;}
 .rslides {
   position: relative;
   list-style: none;
@@ -37,14 +39,11 @@
   filter:alpha(opacity=100)3000;
   -moz-opacity: 1.0;
   opacity: 1.0;
-  }
-
-  
+  }  
 @keyframes anavbar{
   from {background-color:#FF5722;}
   to {background-color:#9E9E9E;opacity: 0.5;display: block;}
 }
-
 footer{bottom: 0px;position:fixed; left:0px;width: 100%;}
 .col-prim-osc{background-color:#E64A19;}.col-prim{background-color:#FF5722;}.col-texto-prim{color:#212121;}.col-texto-sec{color:#757575;}
 .col-icon{color:#FFFFFF;}header a:hover{animation-name:anavbar;animation-duration:1s;}footer ul{list-style:none;}
